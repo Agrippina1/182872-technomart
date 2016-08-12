@@ -100,6 +100,16 @@ header {
   width: 282px;
   margin-top: 41px;
 }
+.user-block-personal {
+  float: right;
+  width: 300px;
+  margin-top: 42px;
+}
+.profile {
+  margin-bottom: 7px;
+  min-height: 45px;
+  background: #ffffff;
+}
 .header-bottom {
   min-height: 120px;
 }
@@ -257,6 +267,36 @@ header {
   position: absolute;
   top: -20px;
   box-shadow: 0 0 16px 0 rgba(35, 31, 32, 0.5);
+}
+.filter {
+  float: left;
+  width: 220px;
+  min-height: 1050px;
+  margin-right: 20px;
+}
+.filter-title {
+  height: 38px;
+  background: #f7f3ec;
+  margin-bottom: 11px;
+}
+.sorting-content {
+  float: right;
+  width: 700px;
+  height: 38px;
+  background: #f7f3ec;
+  margin-bottom: 20px;
+}
+.sorting {
+  float: left;
+  width: 620px;
+  padding-top: 10px;
+}
+.sorting ul {
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 18px;
 }
 .modal-content {
   display: none;
