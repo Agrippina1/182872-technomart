@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -246,7 +249,7 @@
                 <div class="service-slide" id="service-slide2">
                   <div class="service-slide-title">
                     <h2>Гарантия</h2>
-                    <p>Если купленный у нас товар поломается или заискрит,
+                    <p>Если купленный у нас товар поломается или заискрит,<br>
                     а так же в случае пожара, спровоцированного его возгоранием,
                     вы всегда можете быть уверены в нашей гарантии. Мы обменяем
                     сгоревший товар на новый.</p>
@@ -258,6 +261,7 @@
                     <h2>Кредит</h2>
                     <p>Залезть в долговую яму стало проще!</p>
                     <p>Кредитные консультанты придут вам на помощь.</p>
+                    <a class="credit" href="#">Отправить заявку</a>
                   </div>
                 </div>
               </div>
@@ -295,7 +299,7 @@
         <div class="map-big">
           <button class="map-big-close" type="button" title="Закрыть">
           Закрыть</button>
-          <img src="img/map-big.png" width="940" height="446" alt="">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6152511412517!2d30.321169015661575!3d59.93852626907033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1471270626177" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="modal-content">
           <button class="modal-content-close" type="button" title="Закрыть">
@@ -389,5 +393,17 @@
         </div>
       </div>
     </footer>
+    <div class="modal-item-basket">
+      <button class="modal-item-basket-close" type="button" title="Закрыть">
+      Закрыть</button>
+      <div class="basket-wrapper">
+        <span class="icon-shape"></span>
+        <h3>Товар добавлен в корзину!</h3>
+      </div>
+      <div class="purchase clearfix">
+        <a class="checkout-item" href="#">Оформить заказ</a>
+        <a class="shopping" href="#">Продолжить покупки</a>
+      </div>
+    </div>
   </body>
 </html>
