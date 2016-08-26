@@ -813,7 +813,8 @@ header {
   z-index: 10;
   cursor: pointer;
   font-size: 0;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .arrow-left::after {
   content: "";
@@ -827,7 +828,8 @@ header {
   z-index: 10;
   cursor: pointer;
   font-size: 0;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .arrow-right::before {
   content: "";
@@ -841,7 +843,8 @@ header {
   z-index: 10;
   cursor: pointer;
   font-size: 0;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .arrow-right::after {
   content: "";
@@ -855,7 +858,8 @@ header {
   z-index: 10;
   cursor: pointer;
   font-size: 0;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .arrow-right,
 .arrow-left {
@@ -1379,10 +1383,12 @@ header {
   border-radius: 1px;
 }
 .map-big-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .map-big-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .hammers {
   position: relative;
@@ -2041,9 +2047,45 @@ label:disabled {
 }
 /*МОДАЛЬНОЕ ОКНО*/
 
+@-webkit-keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .modal-content {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   display: none;
@@ -2060,7 +2102,8 @@ label:disabled {
 }
 .modal-content-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 .modal-content-close {
   position: absolute;
@@ -2086,10 +2129,12 @@ label:disabled {
   border-radius: 1px;
 }
 .modal-content-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .modal-content-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .name-user {
   float: left;
@@ -2171,8 +2216,6 @@ textarea:focus {
 /*ВТОРОЕ МОДАЛЬНОЕ ОКНО*/
 
 .modal-item-basket {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   display: none;
@@ -2185,10 +2228,6 @@ textarea:focus {
   border-top: 7px solid #ee3643;
   z-index: 30;
   margin-left: -310px;
-}
-.modal-item-show {
-  display: block;
-  animation: bounce 0.6s;
 }
 .modal-item-basket-close {
   position: absolute;
@@ -2214,10 +2253,12 @@ textarea:focus {
   border-radius: 1px;
 }
 .modal-item-basket-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .modal-item-basket-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .modal-item-basket h3 {
   margin: 0;
