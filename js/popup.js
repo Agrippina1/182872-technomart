@@ -58,3 +58,29 @@ window.addEventListener("keydown", function(event) {
     }
   }
 });
+
+  var cartOpen = document.querySelectorAll(".js-buy");
+  var cartPopup = document.querySelector(".modal-item-basket");
+  var cartClose = document.querySelector(".modal-item-basket-close");
+  var cartCancel = document.querySelector(".shopping");
+  for (i = 0; i < cartOpen.length; i++) {
+    cartOpen[i].addEventListener("click", function (event) {
+      event.preventDefault(event);
+      cartPopup.classList.add("modal-item-show");
+    });
+  }
+  cartClose.addEventListener("click", function(event) {
+     event.preventDefault();
+     cartPopup.classList.remove("modal-item-show");
+   });
+  cartCancel.addEventListener("click", function (event) {
+    event.preventDefault(event);
+    cartPopup.classList.remove("modal-item-show");
+  });
+  window.addEventListener("keydown", function (event) {
+      if (event.keyCode == 27) {
+          if (cartPopup.classList.contains("modal-item-show")) {
+              cartPopup.classList.remove("modal-item-show");
+          }
+      }
+  });
